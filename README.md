@@ -20,3 +20,13 @@ O kafka consegue processar muita informação e com pouca latência
   que já é possível emitir a nota fiscal, o consumer irá pegar essa informação do kafka
   e gerar a nota.
   - É um worker, sempre está olhando as informações que estão vindo do Ksafka
+- Zookeeper
+  - Sistema de server discovery que é utilizado como orquestrador dos broker's 
+  que estão sendo rodados pelo Kafka
+    - Gerenciamento de erros e recuperação
+    - Gerenciamento de cluster
+    - Gerenciamento de permissões
+- Topic
+  - Um linha de passagem para as mensagens e eventos emitidos, cada mensagem
+  irá será enviada para um tópico que irá direcionar ela para o fluxo padrão do kafka
+  
